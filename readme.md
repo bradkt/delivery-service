@@ -23,10 +23,17 @@ for local = "http://localhost:5000"
 ## Swagger UI
 
 {Base URL}/swagger/
+![swagger.png](swagger.png)
+
+### Test user id
+gqZAyy4RCFUd6I6yomYXx9BoaUf1
 
 ### Example JSON formatted List
 
 {"randString1":{"value":"apples","note":"red","quantity":5},"randString2":{"value":"banana","note":"ripe","quantity":6},"randString3":{"value":"limes","note":"large","quantity":2}}
+
+### Example in postman
+![postman.png](postman.png)
 
 ## Unit Test with Nose
 
