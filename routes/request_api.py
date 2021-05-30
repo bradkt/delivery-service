@@ -1,5 +1,4 @@
 """The Endpoints to manage the Delivery Service API"""
-import uuid
 import json
 from flask import jsonify, abort, request, Blueprint
 import firebase_admin
@@ -23,10 +22,8 @@ def get_blueprint():
 
 def is_json(myjson):
     try:
-        print(myjson)
         json_object = json.dumps(myjson)
     except ValueError as e:
-        print("String could not be converted to JSON")
         return False
     return True
 
@@ -69,8 +66,8 @@ def create_list(_id):
 
     data = request.get_json(force=True)
 
-    # if not is_json(data):
-    #     abort(405)
+    if not is_json(data):
+        abort(405)
 
     Items_list = {
         "item_list": data,
