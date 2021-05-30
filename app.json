@@ -1,0 +1,6 @@
+{
+    "name": "delivery service api",
+    "description": "grocery delivery service api",
+    "repository": "Add repo link here",
+    "keywords": ["python", "flask", "rest", "crud", "swagger-ui", "pylint", "pep8", "nosetests"]
+  }
