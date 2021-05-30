@@ -15,44 +15,25 @@ python app.py
 docker-compose up
 http://127.0.0.1/swagger/
 
-# Base URL for Docker = "http://127.0.0.1"
+### Base URL
 
-# Base URL for local build= "http://localhost:5000"
+for Docker = "http://127.0.0.1"
+for local = "http://localhost:5000"
 
 ## Swagger UI
 
-Hosted Locally
-http://127.0.0.1:5000/swagger/
+{Base URL}/swagger/
 
-### Get List
+### Example JSON formatted List
 
-```bash
-curl -X GET http://127.0.0.1:5000/list/gqZAyy4RCFUd6I6yomYXx9BoaUf1
-
-```
-
-### Create List
-
-```bash
-curl -X POST http://127.0.0.1:5000/list/gqZAyy4RCFUd6I6yomYXx9BoaUf1
-```
-
-### Update List
-
-```bash
-curl -X PUT http://127.0.0.1:5000/list/gqZAyy4RCFUd6I6yomYXx9BoaUf1 -H 'Content-Type: application/json' -d '{"randString1":{"value":"apples","note":"red","quantity":5},"randString2":{"value":"banana","note":"ripe","quantity":6},"randString3":{"value":"limes","note":"large","quantity":2}}'
-```
-
-### Clear List
-
-```bash
-curl -X DELETE http://127.0.0.1:5000/list/gqZAyy4RCFUd6I6yomYXx9BoaUf1
-```
+{"randString1":{"value":"apples","note":"red","quantity":5},"randString2":{"value":"banana","note":"ripe","quantity":6},"randString3":{"value":"limes","note":"large","quantity":2}}
 
 ## Unit Test with Nose
 
 ```bash
 nosetests --verbosity=2
+or  for windows
+python -m nose --verbose
 ```
 
 ### Test Output
