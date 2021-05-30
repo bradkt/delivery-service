@@ -13,7 +13,7 @@ python app.py
 ## Docker
 
 docker-compose up
-http://127.0.0.1/swagger/
+ use http://127.0.0.1/swagger/
 
 ### Base URL
 
