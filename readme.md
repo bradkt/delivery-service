@@ -3,7 +3,7 @@
 ### To Setup and Start
 
 ```bash
-add delivery-biz-firebase-adminsdk-f8kue-afc933be68.json to project ( in top level )
+add adminSDK private key to project ( in top level )
 pip install -r requirements.txt
 python app.py
 ```
@@ -24,6 +24,7 @@ for local = "http://localhost:5000"
 ![swagger.png](swagger.png)
 
 ### Test user id
+
 gqZAyy4RCFUd6I6yomYXx9BoaUf1
 
 ### Example JSON formatted List
@@ -31,6 +32,7 @@ gqZAyy4RCFUd6I6yomYXx9BoaUf1
 {"randString1":{"value":"apples","note":"red","quantity":5},"randString2":{"value":"banana","note":"ripe","quantity":6},"randString3":{"value":"limes","note":"large","quantity":2}}
 
 ### Example in postman
+
 ![postman.png](postman.png)
 
 ## Unit Test with Nose
@@ -60,7 +62,7 @@ OK
 
 ###
 
-Hosted via Docker-compose and Nginx
+Hosted via Docker-compose and Nginx\
 http://127.0.0.1/swagger/
 
 Forked from: Seans Python3 Flask Rest Boilerplate
