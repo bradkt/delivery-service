@@ -32,9 +32,9 @@ def is_json(myjson):
 def get_record_by_user_id(_id):
     """Return user list by user id
     @param _id: the usr id
-    @return: 200: a json object of items in user list as a flask/response object \
+    @return: 200: a json object of items in users list \
     with application/json mimetype.
-    @raise 404: if user list request not found
+    @raise 404: if user list not found
     """
     if not _id:
         abort(400)
